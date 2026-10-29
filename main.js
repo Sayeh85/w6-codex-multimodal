@@ -54,7 +54,7 @@ async function describe(index, model) {
   result.querySelector('p').textContent = data.response.trim();
 }
 button.addEventListener('click', async () => {
-  const indexes = state.files.map((file, i) => file ? i : -1).filter(i => i >= 0);
+  const indexes = state.files[0] ? [0] : [];
   if (!indexes.length) { setStatus('Please select at least one image first.', 'error'); return; }
   const model = $('model').value; button.disabled = true; button.querySelector('span').textContent = 'Analyzing…';
   setStatus('Connecting to Ollama. This may take a moment on the first run…');
