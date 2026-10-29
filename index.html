@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image to Text | Ollama Vision</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar"><div class="brand-mark">✳</div><div><p class="eyebrow">LOCAL AI · MULTIMODAL</p><h1>Image to <span>Text.</span></h1></div><span class="model-pill"><i></i> Ollama Vision</span></header>
+    <section class="intro"><p class="eyebrow">YOUR VISUAL ASSISTANT</p><h2>Give your images<br> a voice.</h2><p class="intro-copy">Upload one image for a detailed description, or compare two images side by side. Your images are processed by a local Ollama model.</p></section>
+    <section class="workspace" aria-label="Image upload workspace">
+      <article class="image-card"><div class="card-heading"><div><span class="step">01</span><h3>Image one</h3></div><span class="format">JPG · PNG · WEBP</span></div><label class="dropzone" id="dropzone1" for="image1"><input id="image1" type="file" accept="image/*"><span class="upload-icon">↥</span><strong>Choose an image</strong><span>or drag and drop it here</span><small>Upload from your device</small></label><div class="preview-wrap" id="previewWrap1" hidden><img id="preview1" alt="Preview of image one"><div class="preview-caption"><span id="name1">Image selected</span><button class="text-button" data-clear="1" type="button">Remove</button></div></div><div class="result" id="result1" aria-live="polite"><span class="result-label">AI DESCRIPTION</span><p class="placeholder">Your image description will appear here.</p></div></article>
+      <article class="image-card"><div class="card-heading"><div><span class="step">02</span><h3>Image two <em>(optional)</em></h3></div><span class="format">COMPARE</span></div><label class="dropzone" id="dropzone2" for="image2"><input id="image2" type="file" accept="image/*"><span class="upload-icon">↥</span><strong>Choose a second image</strong><span>or drag and drop it here</span><small>Optional · JPG, PNG, WEBP</small></label><div class="preview-wrap" id="previewWrap2" hidden><img id="preview2" alt="Preview of image two"><div class="preview-caption"><span id="name2">Image selected</span><button class="text-button" data-clear="2" type="button">Remove</button></div></div><div class="result" id="result2" aria-live="polite"><span class="result-label">AI DESCRIPTION</span><p class="placeholder">Add a second image to describe it separately.</p></div></article>
+    </section>
+    <div class="controls"><div class="model-control"><label for="model">VISION MODEL</label><select id="model"><option value="llava">llava</option><option value="llama3.2-vision">llama3.2-vision</option><option value="moondream">moondream</option></select></div><button id="describeBtn" class="primary-button" type="button"><span>Describe image(s)</span><span aria-hidden="true">↗</span></button></div>
+    <p id="status" class="status" role="status">Select at least one image to get started.</p>
+    <footer><span>BUILT WITH OLLAMA</span><span>Private by design · Runs locally on your machine</span></footer>
+  </main><script src="main.js"></script>
+</body></html>

@@ -1,0 +1,17 @@
+Codex Prompting Challenge — Image to Text with Ollama
+
+TASK 1 — Single Image Describer
+Prompt 1: Explain how an HTML file input can let a user select an image and preview it in the browser using JavaScript. Keep the solution in plain HTML, CSS, and JavaScript.
+Prompt 2: Explain the Ollama /api/generate request format for a vision model. How should an image be converted to base64 and included in the images array?
+Prompt 3: Review the image-to-text request code. Add loading feedback, success feedback, and useful error handling for an unavailable Ollama server or missing model.
+Prompt 4: Explain how to read the response field from Ollama and safely display the model-generated text in the page.
+Prompt 5: Check the app for empty-image submission, invalid file types, and failed requests. Explain any corrections made.
+
+TASK 2 — Two-Image Challenge
+Prompt 1: Extend the existing app to accept two independent image files and show a separate preview for each without breaking the single-image workflow.
+Prompt 2: Update the JavaScript so each selected image is sent to Ollama and its description is displayed in the matching result panel.
+Prompt 3: Handle cases where no image, only Image 1, only Image 2, or both images are selected. Do not send empty image data.
+Prompt 4: Explain why sequential requests can be useful when running a vision model locally, and add clear loading and error feedback.
+Prompt 5: Review the final code for accessibility, responsive layout, file validation, and safe rendering of the AI response. List any remaining setup requirements.
+
+Note: This prompt history is a starter record for the iterative workflow. Replace or supplement these prompts with the exact prompts you personally send to Codex while testing, as required by the assignment.
