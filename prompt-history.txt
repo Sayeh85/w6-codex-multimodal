@@ -1,17 +1,40 @@
-Codex Prompting Challenge — Image to Text with Ollama
+Task 1 — Single Image Describer
 
-TASK 1 — Single Image Describer
-Prompt 1: Explain how an HTML file input can let a user select an image and preview it in the browser using JavaScript. Keep the solution in plain HTML, CSS, and JavaScript.
-Prompt 2: Explain the Ollama /api/generate request format for a vision model. How should an image be converted to base64 and included in the images array?
-Prompt 3: Review the image-to-text request code. Add loading feedback, success feedback, and useful error handling for an unavailable Ollama server or missing model.
-Prompt 4: Explain how to read the response field from Ollama and safely display the model-generated text in the page.
-Prompt 5: Check the app for empty-image submission, invalid file types, and failed requests. Explain any corrections made.
+Prompt 1
+Help me build a simple webpage where a user can upload one image and preview it before generating a description.
 
-TASK 2 — Two-Image Challenge
-Prompt 1: Extend the existing app to accept two independent image files and show a separate preview for each without breaking the single-image workflow.
-Prompt 2: Update the JavaScript so each selected image is sent to Ollama and its description is displayed in the matching result panel.
-Prompt 3: Handle cases where no image, only Image 1, only Image 2, or both images are selected. Do not send empty image data.
-Prompt 4: Explain why sequential requests can be useful when running a vision model locally, and add clear loading and error feedback.
-Prompt 5: Review the final code for accessibility, responsive layout, file validation, and safe rendering of the AI response. List any remaining setup requirements.
+Prompt 2
+Connect the selected image to Ollama using a vision model and display the generated description on the webpage.
 
-Note: This prompt history is a starter record for the iterative workflow. Replace or supplement these prompts with the exact prompts you personally send to Codex while testing, as required by the assignment.
+Prompt 3
+Add loading and success messages so the user knows when the image is being processed and when the description is ready.
+
+ Prompt 4
+Check how the application handles missing images and errors. Make sure useful error messages are displayed.
+
+Testing
+I tested the application with one image and confirmed that Ollama generated a description successfully.
+
+Task 2 — Two-Image Challenge
+
+Prompt 1
+Extend the application to let the user upload and preview two separate images.
+
+Prompt 2
+Generate a separate description for each image and display each result in its matching section.
+
+Prompt 3
+Handle cases where the user selects both images, only one image, or no images.
+
+Prompt 4
+Review the application and check that both images are processed correctly and that loading and error messages work as expected.
+
+Testing
+I tested the application with two different images and confirmed that each image received its own description.
+
+Final Verification
+Check that both Task 1 and Task 2 work correctly.
+Save all six required screenshots in the output folder.
+Check that the required project files are present.
+Verify that both Git branches are available.
+Prepare the project ZIP and GitHub repository for submission.
